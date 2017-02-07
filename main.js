@@ -93,10 +93,8 @@ console.log(drinks);
 function disemvowel(str) {
     var strArray = str.split('');
     var strArrayNew = "";
-    console.log(strArray);
     var vowels = 'aeiou'; //['a', 'e', 'i', 'o', 'u'];
-    console.log(vowels);
-    for (var i = 0; i < strArray.length; i++) {
+    for (var i = 0; i < strArray.length; i++) {  // ? truevalue : falsevalue
       if(vowels.indexOf(strArray[i].toLowerCase()) === -1){
         strArrayNew = strArrayNew + strArray[i];
       }
@@ -125,18 +123,24 @@ console.assert(disemvowel("This website is for losers LOL!") === "Ths wbst s fr 
 
 
 
-// Write a method complements(array, number)
+// Write a function complements(array, number)
 // which returns true if any two numbers in
 // the array sum to the number. hint :: nest a for loop.
 
 function complements(array, number){
-var sum = 0;
-for (var i = 0; i < odds.length; i++) {
-  if (odds[i] === Math.reduce(arr[i])) {
-    sum += odds[i];
+
+  for(var i=0 i<array.length; i++){
+    var firstAddend = array[i];
+
+    for(var j=0 j<array.length; j++)
+    var secondAddend = array[j];
+    var firstAddend + secondAddend;
+    if(sum === number){
+      return true;
+    }
+  }
+  return false;
 }
-}console.log(sum);
-return sum;
 
 var odds = [1, 3, 5, 7, 9, 11];
 var ints = [-11, 40, 17, -5, -1, -11, 2, 9];
