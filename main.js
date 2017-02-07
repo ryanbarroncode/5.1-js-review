@@ -127,18 +127,20 @@ console.assert(disemvowel("This website is for losers LOL!") === "Ths wbst s fr 
 
 // Write a method complements(array, number)
 // which returns true if any two numbers in
-// the array sum to the number. nest a for loop.
+// the array sum to the number. hint :: nest a for loop.
 
 function complements(array, number){
+var sum = 0;
 for (var i = 0; i < odds.length; i++) {
-  if()
+  if (odds[i] === Math.reduce(arr[i])) {
+    sum += odds[i];
 }
-}
+}console.log(sum);
+return sum;
 
-var odds = [1, 3, 5, 7, 9, 11]
-var ints = [-11, 40, 17, -5, -1, -11, 2, 9]
-console.log(odds);
-console.log(ints);
+var odds = [1, 3, 5, 7, 9, 11];
+var ints = [-11, 40, 17, -5, -1, -11, 2, 9];
+
 
 console.assert( complements(odds, 4) === true )
 console.assert( complements(odds, 1) === false )
