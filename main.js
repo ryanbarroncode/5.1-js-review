@@ -132,13 +132,16 @@ function complements(array, number){
   for(var i=0 i<array.length; i++){
     var firstAddend = array[i];
 
-    for(var j=0 j<array.length; j++)
-    var secondAddend = array[j];
-    var firstAddend + secondAddend;
+    for(var j=0 j<array.length; j++){
+      var secondAddend = array[j];
+      var sum = firstAddend + secondAddend;
+
     if(sum === number){
       return true;
     }
   }
+
+}
   return false;
 }
 
